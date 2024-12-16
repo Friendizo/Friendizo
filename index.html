@@ -1,0 +1,541 @@
+
+<link rel="stylesheet" id="theme-css" href="css/theme-friendizo.css" media="all">
+<link rel="stylesheet" id="header" href="css/theme-friendizo.css" media="all">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+		<meta name="application-name" content="friendizo">
+		<meta name="theme-color" content="#32825a">
+				<link rel="alternate" href="https://www.friendizo.com" hreflang="en-US">			
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRIENDIZO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #bbff00;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .toggle-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .menu-container {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: #444;
+            color: white;
+            width: 200px;
+            display: none;
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .menu-container a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu-container a:hover {
+            background-color: #ff6f61;
+            color: white;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+
+        .menu-container.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        .menu-container.hide {
+            animation: slideUp 0.3s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+            }
+
+            .menu-container {
+                width: 100%;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">FRIENDIZO</a></div>
+		
+        <button class="toggle-button" onclick="toggleMenu()">☰</button>
+    </header>
+    <div id="menu" class="menu-container">
+        
+        <a href="index.html">Home</a>
+        <a href="Log-in-form.html">Log In</a>
+        <a href="Registration-form.html">Sign Up</a>
+
+    </div>
+    <script>
+        const menu = document.getElementById('menu');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            if (isMenuOpen) {
+                menu.classList.remove('show');
+                menu.classList.add('hide');
+                setTimeout(() => menu.style.display = 'none', 300);
+            } else {
+                menu.style.display = 'block';
+                menu.classList.remove('hide');
+                menu.classList.add('show');
+            }
+            isMenuOpen = !isMenuOpen;
+        }
+    </script>
+</body>
+
+	<section class="lp-header has-transition has-mobile-gradient has-main-100-background-color alignleft" style="">
+		<div class="image-container active" style="background-color: transparent; transition: opacity 2s ease-in-out;">
+			<picture>
+				<source media="(min-width: 768px)" srcset="images/homepage-uk-female-2023-02.jpg">
+				<source srcset="images/date-ideas-1024x427.jpg">
+				<img decoding="async" width="828" height="600" src="images/date-ideas-1024x427.jpg" alt="" loading="eager" fetchpriority="high">
+			</picture>
+		</div>
+		<div class="image-container" style="background-color: transparent; transition: opacity 2s ease-in-out;">
+			<picture>
+				<source media="(min-width: 768px)" srcset="images/homepage-uk-male-2023-02.jpg">
+				<source srcset="images/homepage-uk-male-2023-02-828x600.jpg">
+				<img decoding="async" width="828" height="600" src="images/homepage-uk-male-2023-02-828x600.jpg" alt="" loading="lazy" fetchpriority="low">
+			</picture>
+		</div>
+		<div class="block-content">
+			<div class="inner-blocks">
+	
+				<div class="wp-block-group is-style-claim is-layout-flow wp-block-group-is-layout-flow">
+					<div class="wp-block-group__inner-container">
+						<figure class="wp-block-image aligncenter size-full is-resized is-style-drop-shadow">
+							<img decoding="async" src="images/GWGY.svg" alt="" class="wp-image-193" style="width:600px">
+						</figure>
+						<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+					</div>
+				</div>
+<div class="wp-block-psg-intent-questions"><div class="container"><div class="wrapper">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-group__inner-container">
+<p class="has-text-align-center is-style-heading" style="margin-bottom:var(--wp--preset--spacing--20);font-size:60px;font-style:normal;font-weight:500">Start <strong>free</strong> today</p>
+
+<div class="wp-block-psg-intent-question" id="question-1">
+    <p class="headline"></p>
+    <p class="question">Have you tried online dating before?</p>
+    <div class="wp-block-buttons is-vertical is-layout-flex wp-block-buttons-is-layout-flex">
+        <input type="radio" name="online-dating-experience" id="new-to-it" class="wp-block-button" onclick="showNextQuestion('question-2')">
+        <label for="new-to-it" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-1-1">
+            I’m new to it
+        </label>
+
+        <input type="radio" name="online-dating-experience" id="once-or-twice" class="wp-block-button" onclick="showNextQuestion('question-2')">
+        <label for="once-or-twice" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-1-2">
+            Once or twice
+        </label>
+
+        <input type="radio" name="online-dating-experience" id="pro" class="wp-block-button" onclick="showNextQuestion('question-2')">
+        <label for="pro" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-1-3">
+            I’m an online dating pro
+        </label>
+    </div>
+</div>
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained" id="question-2" style="display: none;">
+    <div class="wp-block-group__inner-container">
+        <p class="has-text-align-center is-style-heading" style="margin-bottom:var(---wp---preset---spacing---20); font-size:80px; font-style:normal; font-weight:500">
+            Start <strong>free</strong> today
+        </p>
+            <div class="wp-block-psg-intent-question">
+                <p class="headline"></p>
+              <p class="question">What kind of relationship are you looking for?</p>
+             <div class="wp-block-buttons is-vertical is-layout-flex wp-block-buttons-is-layout-flex">
+                <input type="radio" name="relationship-type" id="casual" class="wp-block-button" onclick="showNextQuestion('registration-form')">
+                <label for="casual" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-2-1">
+                    Casual
+                </label>
+
+                <input type="radio" name="relationship-type" id="serious" class="wp-block-button" onclick="showNextQuestion('registration-form')">
+                <label for="serious" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-2-2">
+                    Serious
+                </label>
+
+                <input type="radio" name="relationship-type" id="not-sure" class="wp-block-button" onclick="showNextQuestion('registration-form')">
+                <label for="not-sure" class="wp-block-button__link wp-element-button" data-bi-subcategory="intent-questions" data-bi-target-id="answer-2-3">
+                    Not sure, just browsing
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained" id="registration-form" style="display: none;">
+    <div class="wp-block-group__inner-container">
+        <p class="has-text-align-center is-style-heading" style="margin-bottom:var(--wp--preset--spacing--20); font-size:60px; font-style:normal; font-weight:500">
+            Let’s <strong>Get Started </strong>
+        </p>
+        <form class="psg-reg-form non-binary hetero no-preselect has-transparent-background-color default wp-block-psg-registration has-background has-transparent-background-color" novalidate method="post" action="/profile/registration" autocomplete="off" data-bi-id="psg-regform" data-bi-enabled="true">
+            <input type="hidden" name="terms" value="on">
+            <input type="hidden" name="userIntent" value="">
+            <div class="form-grid">
+                <span class="radio-group-label">I am</span>
+                <span class="radio-group-label">I am looking for</span>
+            </div>
+            <div class="gender-select form-grid" data-bi-id="gender-select">
+                <fieldset>
+                    <span class="form-input radio">
+                        <input id="mysexW-1" name="mysex" type="radio" value="1" data-gender="FEMALE" aria-label="I am a woman">
+                        <label for="mysexW-1" class="female">a woman</label>
+                    </span>
+                    <span class="form-input radio">
+                        <input id="mysexM-2" name="mysex" type="radio" value="0" data-gender="MALE" aria-label="I am a man">
+                        <label for="mysexM-2" class="male">a man</label>
+                    </span>
+                    <span class="form-input radio">
+                        <input id="mysexNB-3" name="mysex" type="radio" value="4" data-gender="DIVERSE" aria-label="I am nonbinary">
+                        <label for="mysexNB-3" class="non-binary">nonbinary</label>
+                    </span>
+                </fieldset>
+            </div>
+            <p class="notice-nonbinary">You can add more detail about your gender in your profile</p>
+        </form>
+    </div>
+</div>
+
+<script>
+function showNextQuestion(nextQuestionId) {
+    // Hide all sections
+    document.querySelectorAll('.wp-block-group, .wp-block-psg-intent-question').forEach(el => {
+        el.style.display = 'none';
+    });
+    // Show the targeted section
+    document.getElementById(nextQuestionId).style.display = 'block';
+}
+</script>
+
+<div class="hidden"></div>
+
+</form>
+</div></div>
+</div></div></div>
+
+<div class="seal">
+	<div class="wp-block-image">
+		<figure class="alignright">
+											<img decoding="async" class="trusted" src="images/trusted.png" width="106" height="159" alt="">									</figure>
+	</div>
+</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<div class="wp-block-group has-main-100-dark-background-color has-background is-layout-flow wp-block-group-is-layout-flow is-mobile-visible" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16)"><div class="wp-block-group__inner-container">
+<div class="seal">
+	<div class="wp-block-image">
+		<figure class="aligncenter">
+											<img decoding="async" class="trusted" src="images/trusted.png" width="106" height="159" alt="">									</figure>
+	</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group alignwide benefits has-main-200-color has-text-color has-background is-layout-flow wp-block-group-is-layout-flow" id="benefits" style="background-color:#1e5a32"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns md is-layout-flex wp-block-columns md-is-layout-flex">
+<div class="wp-block-column is-style-default has-background is-layout-flow wp-block-column-is-layout-flow" style="background-color:#1e5a32">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="images/Double-Heart.svg" alt="" class="wp-image-166" style="width:32px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);font-size:40px;font-style:normal;font-weight:700">The #1 trusted dating app</p>
+
+
+
+<p class="has-text-align-center" style="margin-bottom:0;font-size:12px">Join Millions Around The World</p>
+</div>
+
+
+
+<div class="wp-block-column has-main-100-background-color has-background is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="images/Double-Heart.svg" alt="" class="wp-image-166" style="width:32px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);font-size:40px;font-style:normal;font-weight:700">Every 1 hours, someone finds love on friendizo</p>
+
+
+
+<p class="has-text-align-center" style="margin-bottom:0;font-size:12px">friendizo user data</p>
+</div>
+
+
+
+<div class="wp-block-column has-background is-layout-flow wp-block-column-is-layout-flow" style="background-color:#1e5a32">
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" src="images/Double-Heart.svg" alt="" class="wp-image-166" style="width:32px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);font-size:40px;font-style:normal;font-weight:700">Highest quality dating pool</p>
+
+
+
+<p class="has-text-align-center" style="margin-bottom:0;font-size:12px">Platform where individuals can find exceptional and like-minded people for meaningful connections and relationships</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div id="Facts" class="wp-block-group is-style-default has-main-200-background-color has-background is-layout-flow wp-block-group-is-layout-flow"><div class="wp-block-group__inner-container">
+<h1 class="wp-block-heading has-text-align-center has-main-100-color has-text-color" id="our-dating-site-helps-millions-find-real-love">Our dating site has helped millions of couples find love</h1>
+
+
+
+<div class="wp-block-columns max-width md is-style-gap-30 has-off-black-color has-text-color is-layout-flex wp-block-columns max-width md-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full has-custom-border is-style-default"><img decoding="async" width="600" height="360" src="images/1-over-2-million-have-found-love.jpg" alt="" class="has-border-color has-main-100-border-color wp-image-168" style="border-width:5px;border-radius:20px" srcset="images/1-over-2-million-have-found-love.jpg 600w, images/1-over-2-million-have-found-love-300x180.jpg 300w" sizes="(max-width: 600px) 100vw, 600px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading has-light-eggshell-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20);font-size:30px"><strong>Over 2 million </strong><br><strong>have found love</strong></p>
+
+
+
+<p class="has-text-align-center has-light-eggshell-color has-text-color has-font-075-font-size" style="margin-top:0;margin-bottom:0">… could you be next?</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full has-custom-border is-style-default"><img loading="lazy" decoding="async" width="600" height="360" src="images/3-site-most-likely-to-lead-to-happy-relationships.jpg" alt="" class="has-border-color has-main-100-border-color wp-image-170" style="border-width:5px;border-radius:20px" srcset="images/3-site-most-likely-to-lead-to-happy-relationships.jpg 600w, images/3-site-most-likely-to-lead-to-happy-relationships-300x180.jpg 300w" sizes="auto, (max-width: 600px) 100vw, 600px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading has-light-eggshell-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20);font-size:30px"><strong>Site most likely to lead to happy relationships</strong></p>
+
+
+
+<p class="has-text-align-center has-light-eggshell-color has-text-color has-font-075-font-size" style="margin-top:0;margin-bottom:0">… the right one may be waiting for you!</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full has-custom-border is-style-default"><img loading="lazy" decoding="async" width="600" height="360" src="images/4-messages-sent-weekly.jpg" alt="" class="has-border-color has-main-100-border-color wp-image-171" style="border-width:5px;border-radius:20px" srcset="images/4-messages-sent-weekly.jpg 600w, images/4-messages-sent-weekly-300x180.jpg 300w" sizes="auto, (max-width: 600px) 100vw, 600px"></figure>
+
+
+
+<p class="has-text-align-center is-style-heading has-light-eggshell-color has-text-color" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20);font-size:30px"><strong>2.3 million messages sent weekly</strong></p>
+
+
+
+<p class="has-text-align-center has-light-eggshell-color has-text-color has-font-075-font-size" style="margin-top:0;margin-bottom:0">See who wants to talk to you!</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div id="friendizoVideo" class="wp-block-group is-style-max-width has-main-200-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0"><div class="wp-block-group__inner-container">
+<h2 class="wp-block-heading has-text-align-center has-main-100-color has-text-color" id="introducing a new friendizo experience-1">Introducing: A new friendizo experience</h2>
+
+
+
+<p class="has-text-align-center is-style-max-width has-support-050-color has-text-color">Your search for a great relationship has never been easier with groundbreaking overhaul of the friendizo you know and trust.</p>
+
+
+
+<p class="has-text-align-center is-style-max-width has-support-050-color has-text-color">GET A SNEAK PEEK:</p>
+
+
+
+<div id="friendizo-Principle" class="wp-block-group is-style-max-width has-main-200-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0"><div class="wp-block-group__inner-container">
+<h2 class="wp-block-heading has-text-align-center has-main-100-color has-text-color" id="compatibility-counts">Compatibility matters</h2>
+
+
+
+<div class="wp-block-columns md mobile-reverse-order are-vertically-aligned-center is-style-gap-40 is-layout-flex wp-block-columns md mobile-reverse-order-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full is-style-default"><img decoding="async" src="images/MatchingWheel-Partner.svg" alt="" class="wp-image-172"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<p>What happens when you apply 20+ years of experience and research to our members’ needs? Lasting relationships happen. Because only friendizo uses our unique Compatibility Matching System. That’s why every 1 hours, someone finds love on friendizo.</p>
+
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-premium"><a class="wp-block-button__link wp-element-button" href="Registration-form.html"><a href="Registration-form.html">Join now</a></div>
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+<div id="QualitySingles" class="wp-block-group is-style-default has-main-200-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0"><div class="wp-block-group__inner-container">
+<h2 class="wp-block-heading has-text-align-center has-main-100-color has-text-color" id="quality-singles-just-like-you">Desirable singles, just like you</h2>
+
+
+
+<div class="wp-block-columns md mobile-reverse-order are-vertically-aligned-center is-style-gap-40 is-layout-flex wp-block-columns md mobile-reverse-order-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<p class="is-style-max-width">They’re smart, sincere and serious about finding love. Meet matches today whose personalities and outlook are in tune with your own.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-left is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-premium"><a class="wp-block-button__link wp-element-button" href="Registration-form.html"><a href="Registration-form.html">Join now</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image aligncenter size-full"><img loading="lazy" decoding="async" width="505" height="320" src="images/compatibillity-score.png" alt="" class="wp-image-173" srcset="images/compatibillity-score.png 505w, images/compatibillity-score-300x190.png 300w" sizes="auto, (max-width: 505px) 100vw, 505px"></figure>
+</div>
+    </div>
+
+
+<div class="wp-block-columns max-width md max-width md is-not-stacked-on-mobile is-style-gap-10 is-layout-flex wp-block-columns max-width md max-width md-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%">
+</div>
+</div>
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+
+
+<div class="seal">
+	<div class="wp-block-image">
+		<figure class="aligncenter">
+</div>
+</div>
+
+
+
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-text-align-center is-style-max-width has-support-050-color has-text-color">We are a trusted name in matchmaking, supported by a dedicated Trust and Safety team committed to your journey.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-block-buttons-is-layout-flex">
+</div>
+</div></div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Branding Section -->
+        <div class="footer-section brand">
+            <h3>Friendizo</h3>
+
+
+        <!-- Navigation Links -->
+        <div class="footer-section links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section social">
+           
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-section newsletter">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for the latest updates and features.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Friendizo. All rights reserved. | Designed with ❤️</p>
+    </div>
+</footer>
+
